@@ -1,1 +1,30 @@
-<p>programs works!</p>
+<div class="programs">
+    <div class="container programs__container">
+
+        <div class="programs__Info_Text">
+            <h2>The Best Programs We Offer For You</h2>
+
+            <p>From strength training and yoga to cardio and weight loss programs, we offer a variety of workouts to
+                keep you motivated and on track. Join us and find the perfect program for you.</p>
+        </div>
+
+        <div class="programs__Info__Cards">
+
+            @for (item of ProgramsCard; track $index) {
+            <div class="Programs__card">
+                <img [src]="item.image" alt="">
+
+                <h5>{{item.tittle}}</h5>
+
+                <p>{{item.description}}</p>
+
+                <button type="button">
+                    <span>Learn more </span>
+                    <img src="icon/arrow-right-line.svg" alt="">
+                </button>
+            </div>
+            }
+        </div>
+
+    </div>
+</div>
