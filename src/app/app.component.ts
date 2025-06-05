@@ -1,4 +1,3 @@
-import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from "./main/header/header.component";
 import { BannerComponent } from "./content/banner/banner.component";
@@ -7,7 +6,9 @@ import { ProgramsComponent } from "./content/programs/programs.component";
 import { ServicesComponent } from "./content/services/services.component";
 import { ReviewComponent } from "./content/review/review.component";
 import { FooterComponent } from "./main/footer/footer.component";
-import AOS from 'aos';
+import { Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -25,7 +26,11 @@ import AOS from 'aos';
 export class AppComponent implements OnInit {
   title = 'MyFitnes';
 
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) { }
+
   ngOnInit(): void {
-    AOS.init();
+    if (isPlatformBrowser(this.platformId)) {
+      AOS.init();
+    }
   }
 }

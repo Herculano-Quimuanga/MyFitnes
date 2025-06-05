@@ -32,10 +32,13 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/aos/dist/aos.css"
+              "node_modules/aos/dist/aos.css",
+              "src/styles.scss"
             ],
             "scripts": [],
+            "allowedCommonJsDependencies": [
+              "aos"
+            ],
             "server": "src/main.server.ts",
             "outputMode": "server",
             "ssr": {
@@ -97,11 +100,14 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "node_modules/aos/dist/aos.css"
+              "node_modules/aos/dist/aos.css",
+              "src/styles.scss"
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
