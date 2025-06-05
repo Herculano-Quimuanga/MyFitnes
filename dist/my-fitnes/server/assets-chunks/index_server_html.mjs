@@ -16,6 +16,6 @@ export default `<!doctype html>
   <script>
     AOS.init();
   </script>
-<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-O4X4PL6Y.js" type="module"></script></body>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-MGHJVZZR.js" type="module"></script></body>
 </html>
 `;

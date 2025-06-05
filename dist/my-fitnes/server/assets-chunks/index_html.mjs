@@ -14,6 +14,6 @@ export default `<!DOCTYPE html><html lang="en" data-beasties-container><head>
   <script>
     AOS.init();
   </script>
-<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-O4X4PL6Y.js" type="module"></script>
+<script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-MGHJVZZR.js" type="module"></script>
 
 <script id="ng-state" type="application/json">{"__nghData__":[{},{"t":{"9":"t0"},"c":{"9":[{"i":"t0","r":1,"x":4}]}},{"c":{"7":[]}}]}</script></body></html>`;
