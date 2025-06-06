@@ -373,6 +373,11 @@ li {
   }
 }
 
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
 
 
 
@@ -487,9 +492,6 @@ li {
   }
 }
 
-
-
-
 .header {
   background-color: var(--base-color);
 }
@@ -511,5 +513,5 @@ li {
 }
 
 .footer{
-  background-color: var(--background-color-1);
+  background-color: var(--base-color);
 }
