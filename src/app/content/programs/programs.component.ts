@@ -13,21 +13,25 @@ export class ProgramsComponent {
       image: 'img/program-1.png',
       tittle: 'Strength Training',
       description: 'Build muscle, increase endurance, and enhance overall strength with our expert-led resistance and weight training sessions.',
+      duraction: 350,
     },
     {
       image: 'img/program-2.png',
       tittle: 'Basic Yoga',
       description: 'Improve flexibility, balance, and mental well-being with guided yoga sessions designed for relaxation and inner peace.',
+      duraction: 700,
     },
     {
       image: 'img/program-3.png',
       tittle: 'Body Building',
       description: 'Sculpt and define your physique with targeted workouts, expert coaching, and personalized training plans.',
+      duraction: 1050,
     },
     {
       image: 'img/program-4.png',
       tittle: 'Weight Loss',
-      description: 'Burn calories, boost metabolism, and achieve your ideal weight with our effective fat-burning and cardio-based programs.'
+      description: 'Burn calories, boost metabolism, and achieve your ideal weight with our effective fat-burning and cardio-based programs.',
+      duraction: 1400,
     },
   ];
 }
