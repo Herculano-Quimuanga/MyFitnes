@@ -3,7 +3,7 @@
         <div class="logo__header">
             <img src="img/logo.png" alt="Logotipo Fitness">
         </div>
-        <ul class="list__header">
+        <ul class="list__header" [ngClass]="{'show' : ShowMenu}">
             <li>
                 <a href="">Home</a>
             </li>
@@ -20,10 +20,10 @@
             <button type="button" class="btn">Sign Up</button>
         </ul>
         <div class="menu__header">
-            <button type="button">
+            <button type="button" *ngIf="!ShowMenu" (click)="ToggleMenu()">
                 <i class="pi pi-bars"></i>
             </button>
-            <button type="button">
+            <button type="button" *ngIf="ShowMenu" (click)="ToggleMenu()">
                 <i class="pi pi-times"></i>
             </button>
         </div>

@@ -1,68 +1,62 @@
 {
-  "hash": "423c35c6",
-  "configHash": "2488ab71",
-  "lockfileHash": "592fbac8",
-  "browserHash": "ce4c088a",
+  "hash": "06cf5e55",
+  "configHash": "dec56bad",
+  "lockfileHash": "5c8a92f5",
+  "browserHash": "edfabaae",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "90275981",
+      "fileHash": "58daf22a",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "a482d883",
+      "fileHash": "66d60225",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "45c3b6eb",
+      "fileHash": "12b521d5",
       "needsInterop": false
     },
     "@angular/platform-server": {
       "src": "../../../../../../node_modules/@angular/platform-server/fesm2022/platform-server.mjs",
       "file": "@angular_platform-server.js",
-      "fileHash": "8a5796bc",
+      "fileHash": "16f93c99",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "10f04b32",
+      "fileHash": "56a14ddd",
       "needsInterop": false
     },
     "@angular/ssr": {
       "src": "../../../../../../node_modules/@angular/ssr/fesm2022/ssr.mjs",
       "file": "@angular_ssr.js",
-      "fileHash": "dc095d1b",
+      "fileHash": "e1be6b4e",
       "needsInterop": false
     },
     "@angular/ssr/node": {
       "src": "../../../../../../node_modules/@angular/ssr/fesm2022/node.mjs",
       "file": "@angular_ssr_node.js",
-      "fileHash": "88c3a030",
+      "fileHash": "50fa1509",
       "needsInterop": false
     },
     "aos": {
       "src": "../../../../../../node_modules/aos/dist/aos.js",
       "file": "aos.js",
-      "fileHash": "fc806ee0",
+      "fileHash": "56004677",
       "needsInterop": true
     },
     "express": {
       "src": "../../../../../../node_modules/express/index.js",
       "file": "express.js",
-      "fileHash": "8318fe3a",
+      "fileHash": "7ddf26e2",
       "needsInterop": true
-    },
-    "tslib": {
-      "src": "../../../../../../node_modules/tslib/tslib.es6.mjs",
-      "file": "tslib.js",
-      "fileHash": "155dbbd1",
-      "needsInterop": false
     }
   },
   "chunks": {

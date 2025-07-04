@@ -8,6 +8,7 @@ import { FooterComponent } from "./main/footer/footer.component";
 import { Component, Inject, PLATFORM_ID, OnInit } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import * as AOS from 'aos';
+import { HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -30,6 +31,33 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {
     if (isPlatformBrowser(this.platformId)) {
       AOS.init();
+    }
+  }
+
+  activeSection: string = '';
+
+
+  scrollToSection(event: Event, sectionId: string) {
+    event.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      this.activeSection = sectionId;
+    }
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const sections = ['hero', 'about', 'destack', 'news', 'gallery', 'parceiros'];
+    for (let id of sections) {
+      const el = document.getElementById(id);
+      if (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          this.activeSection = id;
+          break;
+        }
+      }
     }
   }
 

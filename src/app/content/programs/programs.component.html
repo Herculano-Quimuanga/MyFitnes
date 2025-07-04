@@ -2,16 +2,19 @@
     <div class="container programs__container">
 
         <div class="programs__Info_Text">
-            <h2 class="tittle__Section" data-aos="fade-up" data-aos-duraction="1000" data-aos-delay="200">The Best Programs We Offer For You</h2>
+            <h2 class="tittle__Section" data-aos="fade-up" data-aos-duraction="1000" data-aos-delay="200">The Best
+                Programs We Offer For You</h2>
 
-            <p class="text__Section" data-aos="fade-up" data-aos-duraction="1000" data-aos-delay="200">From strength training and yoga to cardio and weight loss programs, we offer a variety of workouts to
+            <p class="text__Section" data-aos="fade-up" data-aos-duraction="1000" data-aos-delay="200">From strength
+                training and yoga to cardio and weight loss programs, we offer a variety of workouts to
                 keep you motivated and on track. Join us and find the perfect program for you.</p>
         </div>
 
         <div class="programs__Info__Cards">
 
             @for (item of ProgramsCard; track $index) {
-            <div class="Programs__card" data-aos="zoom-in" [attr.data-aos-delay]="item.duraction" data-aos-duraction="1000">
+            <div class="Programs__card" data-aos="zoom-in" [attr.data-aos-delay]="item.duraction"
+                data-aos-duraction="1000">
                 <img [src]="item.image" alt="">
 
                 <h5>{{item.tittle}}</h5>
